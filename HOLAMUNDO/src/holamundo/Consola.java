@@ -8,23 +8,22 @@ private Scanner sc;
 public Consola()
 {
 this.sc = new Scanner(System.in);
-
 }
 
 
-public String readString(String msg)
+public String leerString(String msg)
 {
 System.out.println(msg);
 return sc.nextLine();
 
 }
-public int readEntero(String msg)
+public int leerEntero(String msg)
 {
 System.out.println(msg);
 return sc.nextInt();
 }
 
-public float readFloat(String msg)
+public float leerFloat(String msg)
 {
 System.out.println(msg);
 return sc.nextFloat();
