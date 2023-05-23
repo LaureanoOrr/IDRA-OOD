@@ -14,7 +14,7 @@ this.sc = new Scanner(System.in);
 public String leerString(String msg)
 {
 System.out.println(msg);
-return sc.nextLine();
+return sc.next();
 
 }
 public int leerEntero(String msg)
