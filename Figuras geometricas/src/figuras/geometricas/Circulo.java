@@ -13,8 +13,18 @@ public class Circulo extends Figuras2D {
         this.radio = radio;
     }
 
-    protected float calcularArea() {
-        radio
+    @Override //OVERRIDE PARA UTILIZAR DE MANERA "DINAMICA" PARA CADA CLASE HIJA.
+    public float calcularArea() {
+        float area;
+        area = pi * (radio * radio);
+        return area;
+    }
+
+    @Override //OVERRIDE PARA UTILIZAR DE MANERA "DINAMICA" PARA CADA CLASE HIJA.
+    public float calcularPerimetro() {
+        float perimetro;
+        perimetro = 2 * pi * radio;
+        return perimetro;
     }
 
 }
